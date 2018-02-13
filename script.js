@@ -88,19 +88,19 @@ document.querySelector('.stopwatch'));
 
 const resultList = document.querySelector('.results');
 
-var startButton = document.getElementById('start');
+const startButton = document.getElementById('start');
 startButton.addEventListener('click', () => stopwatch.start());
 
-var stopButton = document.getElementById('stop');
+const stopButton = document.getElementById('stop');
 stopButton.addEventListener('click', () => stopwatch.stop());
 
-var resetButton = document.getElementById('reset');
+const resetButton = document.getElementById('reset');
 resetButton.addEventListener('click', () => stopwatch.reset());
 
-var splitButton = document.getElementById('split');
+const splitButton = document.getElementById('split');
 splitButton.addEventListener('click', () => stopwatch.split());
 
-var clearResultsListButton = document.getElementById('clear');
+const clearResultsListButton = document.getElementById('clear');
 clearResultsListButton.addEventListener('click', () => clearResultsList(resultList));
 
 function pad0(value) {
